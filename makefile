@@ -6,10 +6,10 @@
 # Compiler setup
 
 CXX      = g++
-CXXFLAGS = -std=c++2a -O2 -Wextra -Wall -Wpedantic -Wimplicit-fallthrough -I $(LIBDIR)
+CXXFLAGS = -std=c++2a -O2 -Wextra -Wall -Wpedantic -Wimplicit-fallthrough -DHAVE_INLINE -I $(LIBDIR)
 LDFLAGS  = -lm -lgsl -lgslcblas -lstdc++fs -lgmpxx -lgmp
 
-LIBDIR = /usr/local/include/eigen3
+LIBDIR = .
 SRCDIR = src
 INCDIR = inc
 OBJDIR = obj
